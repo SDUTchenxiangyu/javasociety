@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2018-7-8 10:11:45 by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="com.sdut.jgzj.bean.Matchstate" table="MATCHSTATE">
+        <id name="id" type="java.lang.Integer">
+            <column name="ID" />
+            <generator class="native" />
+        </id>
+        <property name="name" type="java.lang.String">
+            <column name="NAME" />
+        </property>
+        <property name="openTime" type="java.util.Date">
+            <column name="OPENTIME" />
+        </property>
+        <property name="closeTime" type="java.util.Date">
+            <column name="CLOSETIME" />
+        </property>
+        <property name="place" type="java.lang.String">
+            <column name="PLACE" />
+        </property>
+        <property name="matchClass" type="java.lang.Integer">
+            <column name="MATCHCLASS" />
+        </property>
+        <property name="timeorperson" type="java.lang.String">
+            <column name="TIMEORPERSON" />
+        </property>
+        <property name="time_number" type="java.lang.Integer">
+            <column name="TIME_NUMBER" />
+        </property>
+        <property name="openorclose" type="boolean">
+            <column name="OPENORCLOSE" />
+        </property>
+        <property name="typematch" type="java.lang.Integer">
+            <column name="TYPEMATCH" />
+        </property>
+    </class>
+</hibernate-mapping>
